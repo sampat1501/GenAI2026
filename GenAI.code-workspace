@@ -1,0 +1,112 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+      "out": false,
+      "dist": true,
+      ".node_modules": true,
+      "**/.DS_Store": true,
+      "**/__pycache__": true,
+      "**/*.pyc": true
+    },
+    "search.exclude": {
+      "out": true,
+      "dist": true,
+      ".node_modules": true,
+      "__pycache__": true
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.testing.pytestEnabled": true,
+    "[python]": {
+      "editor.tabSize": 4,
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.defaultInterpreterPath": "d:\\GenAI\\.venv\\Scripts\\python.exe",
+    "python.condaPath": "C:\\Users\\sampat.bansode\\anaconda3\\Scripts\\conda.exe",
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+      "venv-pwsh": {
+        "path": "C\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "args": [
+          "-ExecutionPolicy",
+          "RemoteSigned",
+          "-NoExit",
+          "-Command",
+          "Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned; $env:PATHEXT += ';.PY'; Set-Location 'd:\\GenAI'; & 'd:\\GenAI\\.venv\\Scripts\\Activate.ps1'"
+        ],
+        "icon": "terminal-powershell",
+        "color": "terminal.ansiGreen"
+      },
+      "venv-cmd": {
+        "path": "C\\Windows\\System32\\cmd.exe",
+        "args": [
+          "/K",
+          "set \"PATH=d:\\GenAI\\.venv\\Scripts;%PATH%\" && set \"PATHEXT=%PATHEXT%;.PY\" && cd /d d:\\GenAI"
+        ],
+        "icon": "terminal-cmd",
+        "color": "terminal.ansiBlue"
+      },
+      "conda-env": {
+        "path": "C\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "args": [
+          "-ExecutionPolicy",
+          "ByPass",
+          "-NoExit",
+          "-Command",
+          "& 'C:\\Users\\sampat.bansode\\anaconda3\\Lib\\site-packages\\conda\\shell\\condabin\\conda-hook.ps1'; conda activate base; Clear-Host; $py = (python --version 2>$null); $node = ''; if (Get-Command node -ErrorAction SilentlyContinue) { $node = '; Node: ' + (node --version 2>$null); } $npm = ''; if (Get-Command npm -ErrorAction SilentlyContinue) { $npm = '; npm: ' + (npm --version 2>$null); } Write-Host '🐍 Ambiente base attivato!: ' -ForegroundColor Green -NoNewline; Write-Host ($py + $node + $npm) -ForegroundColor Cyan;"
+        ],
+        "icon": "terminal-powershell",
+        "color": "terminal.ansiGreen"
+      },
+      "conda-env-cmd": {
+        "path": "C\\Windows\\System32\\cmd.exe",
+        "args": [
+          "/K",
+          "\"C:\\Users\\sampat.bansode\\anaconda3\\Scripts\\activate.bat\" base && setlocal EnableDelayedExpansion && for /f \"tokens=* delims=\" %P in ('python --version 2^>nul') do set PY=%P && set MSG=Python: !PY! && (where node >nul 2>nul && for /f \"tokens=* delims=\" %N in ('node --version 2^>nul') do set MSG=!MSG!; Node: %N) && (where npm >nul 2>nul && for /f \"tokens=* delims=\" %M in ('npm --version 2^>nul') do set MSG=!MSG!; npm: %M) && echo Ambiente base attivato!: !MSG!"
+        ],
+        "icon": "terminal-cmd",
+        "color": "terminal.ansiBlue"
+      },
+      "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell",
+        "args": [
+          "-ExecutionPolicy",
+          "RemoteSigned",
+          "-NoExit",
+          "-Command",
+          "Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned; $env:PATHEXT += ';.PY'; Set-Location 'd:\\GenAI'; & 'd:\\GenAI\\.venv\\Scripts\\Activate.ps1'"
+        ]
+      }
+    },
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "files.eol": "\n",
+    "files.encoding": "utf8",
+    "editor.defaultFormatter": "GitHub.copilot-chat",
+    "editor.defaultFoldingRangeProvider": "GitHub.copilot-chat"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-python.black-formatter",
+      "ms-python.flake8",
+      "ms-python.isort",
+      "ms-toolsai.jupyter"
+    ]
+  }
+}

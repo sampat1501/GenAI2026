@@ -1,0 +1,4 @@
+# No external dependencies required\n
+
+numpy
+pandas
