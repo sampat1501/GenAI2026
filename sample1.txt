@@ -1,0 +1,4 @@
+Hi , I am sampat bansode, how are you?
+I am going to learn new LLM course using langchain
+I have nothing knowlegde on Pyhton.
+But daring to learn LLM , thats the joke right?

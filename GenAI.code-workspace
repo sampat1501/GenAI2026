@@ -97,7 +97,10 @@
     "files.eol": "\n",
     "files.encoding": "utf8",
     "editor.defaultFormatter": "GitHub.copilot-chat",
-    "editor.defaultFoldingRangeProvider": "GitHub.copilot-chat"
+    "editor.defaultFoldingRangeProvider": "GitHub.copilot-chat",
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    }
   },
   "extensions": {
     "recommendations": [
