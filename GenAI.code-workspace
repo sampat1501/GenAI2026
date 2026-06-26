@@ -78,7 +78,9 @@
     "editor.defaultFoldingRangeProvider": "GitHub.copilot-chat",
     "[jsonc]": {
       "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
   },
   "extensions": {
     "recommendations": [
