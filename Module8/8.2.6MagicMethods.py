@@ -1,12 +1,12 @@
 class Student:
+    # Show object format in string format and nicely printed for human reading
     def __str__(
         self,
-    ) -> (
-        str
-    ):  # Show object format in string format and nicely printed for human reading
+    ) -> str:
         return "sampat"
 
-    def __repr__(self) -> str:  # Show object in technical format required for developer
+    # Show object in technical format required for developer
+    def __repr__(self) -> str:
         return "Developer Sampat"
 
 
