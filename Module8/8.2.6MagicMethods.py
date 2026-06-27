@@ -36,3 +36,30 @@ e = Employee(101, "Sampat", 38, "Male")
 print(e)
 print([e])
 print(repr(e))
+
+
+class Vector:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return f"{self.x+other.x} {self.y+other.y}"
+
+    def __sub__(self, other):
+        return f"{self.x-other.x}  {self.y-other.y}"
+
+    def __mul__(self, other):
+        return f"{self.x*other.x} {self.y*other.y}"
+
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+
+
+v1 = Vector(3, 4)
+v2 = Vector(2, 3)
+
+print(v1 + v2)
+print(v1 - v2)
+print(v1 * v2)
+print(v1 == v2)
