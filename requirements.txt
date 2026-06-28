@@ -1,4 +1,10 @@
 # No external dependencies required\n
-
+ipykernel
 numpy
 pandas
+streamlit
+seaborn
+scikit-learn
+flask
+matplotlib
+memory-profiler
