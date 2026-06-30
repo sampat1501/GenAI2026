@@ -1,5 +1,3 @@
-from sre_parse import Tokenizer
-
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tokenize import wordpunct_tokenize
@@ -29,14 +27,10 @@ print(words)
 for sent in sentences:
     words = word_tokenize(sent)
     print(words)
-    print(
-        "This is dividing line =========================================================================="
-    )
+    print("This is dividing line =====================================")
     words1 = wordpunct_tokenize(sent)
     print(words1)
-    print(
-        "This is dividing line =========================================================================="
-    )
+    print("This is dividing line =====================================")
     tokeniser = TreebankWordTokenizer()
     word_bank = tokeniser.tokenize(sent)
     print(word_bank)
