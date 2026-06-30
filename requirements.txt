@@ -8,3 +8,4 @@ scikit-learn
 flask
 matplotlib
 memory-profiler
+nltk
