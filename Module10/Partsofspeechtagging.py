@@ -1,17 +1,26 @@
-from nltk import pos_tag
 import nltk
-
-nltk.download("averaged_perceptron_tagger_eng")
 from nltk.corpus import stopwords
 from nltk import sent_tokenize
 from nltk import word_tokenize
 
-paragraph = """My dear young friends,
-Dream, dream, dream. Dreams transform into thoughts, and thoughts result in action. You have to dream before your dreams can come true. Never be afraid of aiming high. Difficulties are a part of life; they are meant to make us stronger and help us appreciate success.
-Every young person has the power to change the nation through knowledge, hard work, and determination. Let your dreams become your mission. Believe in yourself, work with integrity, and never give up.
-A developed and prosperous nation can be built when its youth dare to dream and have the courage to act on those dreams.
-"Small aim is a crime; have great aim."
-Thank you."""
+nltk.download("averaged_perceptron_tagger_eng")
+
+
+paragraph = (
+    "My dear young friends, Dream, dream, dream. Dreams "
+    "transform into thoughts, and thoughts result in action. "
+    "You have to dream before your dreams can come true. "
+    "Never be afraid of aiming high. Difficulties are a part "
+    "of life; they are meant to make us stronger and help us "
+    "appreciate success. Every young person has the power to "
+    "change the nation through knowledge, hard work, and "
+    "determination. Let your dreams become your mission. "
+    "Believe in yourself, work with integrity, and never give "
+    "up. A developed and prosperous nation can be built when "
+    "its youth dare to dream and have the courage to act on "
+    "those dreams. Small aim is a crime; have great aim. "
+    "Thank you."
+)
 
 sentences = sent_tokenize(paragraph)
 
