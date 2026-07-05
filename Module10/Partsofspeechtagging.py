@@ -5,7 +5,6 @@ from nltk import word_tokenize
 
 nltk.download("averaged_perceptron_tagger_eng")
 
-
 paragraph = (
     "My dear young friends, Dream, dream, dream. Dreams "
     "transform into thoughts, and thoughts result in action. "
