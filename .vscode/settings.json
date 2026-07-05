@@ -7,5 +7,18 @@
   },
   "editor.suggestOnTriggerCharacters": false,
   "editor.inlineSuggest.enabled": false,
-  "editor.parameterHints.enabled": false
+  "editor.parameterHints.enabled": false,
+  "[python]": {
+    "editor.rulers": [
+      79
+    ]
+  },
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=79"
+  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length=79"
+  ]
 }

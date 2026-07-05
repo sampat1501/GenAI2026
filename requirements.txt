@@ -9,3 +9,4 @@ flask
 matplotlib
 memory-profiler
 nltk
+gensim
