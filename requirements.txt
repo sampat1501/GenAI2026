@@ -21,3 +21,5 @@ matplotlib
 memory-profiler
 nltk
 gensim
+langchain-huggingface
+sentence-transformers
