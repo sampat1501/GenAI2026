@@ -1,8 +1,19 @@
-# No external dependencies required\n
-ipykernel
-numpy
-pandas
+langgraph
+langchain
+langsmith
+python-dotenv
+langchain_groq
+langchain_tavily
+langgraph-cli[inmem]
+langchain_community
+langchain-mcp-adapters
+fastmcp
+mcp
+langchain_core
 streamlit
+pandas
+numpy
+ipykernel
 seaborn
 scikit-learn
 flask
