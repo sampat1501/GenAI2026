@@ -56,7 +56,7 @@ user_prompt = st.text_input("Enter your query from the the research paper")
 
 if st.button("Document Embeddings"):
     create_vector_embeddings()
-    st.write("vector Database is ready")
+    st.markdown(st.write("vector Database is ready"))
 
 
 import time
@@ -68,7 +68,7 @@ if user_prompt and "vectors" in st.session_state:
     start = time.process_time()
     response = retriever_chain.invoke({"input": user_prompt})
     print(f"Response time: {time.process_time()-start}")
-    st.write(response["answer"])
+    st.markdown(st.write(response["answer"]))
 
     ##With streamlit expander
 

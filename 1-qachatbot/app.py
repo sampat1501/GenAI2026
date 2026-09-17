@@ -27,7 +27,7 @@ prompt = ChatPromptTemplate.from_messages(
 
 
 def generate_response(question, api_key, model, temprature, maxtokens):
-    groq_api_key = os.getenv("GROQ_API_KEY")
+    api_key = os.getenv("GROQ_API_KEY")
     model = ChatGroq(model="openai/gpt-oss-120b")
     outputparser = StrOutputParser()
     chain = prompt | model | outputparser
