@@ -24,3 +24,7 @@ gensim
 langchain-huggingface
 sentence-transformers
 langchain-chroma
+arxiv
+wikipedia
+langchain-tools
+langchainhub
